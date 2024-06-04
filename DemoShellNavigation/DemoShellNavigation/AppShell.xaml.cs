@@ -9,6 +9,7 @@ namespace DemoShellNavigation
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("signup", typeof(Views.Signup));
         }
     }
 }

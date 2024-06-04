@@ -19,7 +19,7 @@ namespace DemoShellNavigation.Views
 
         private async void OnLoginButton(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//login");
+            await Shell.Current.GoToAsync("login");
         }
     }
 }

@@ -75,7 +75,6 @@
 
     <ShellItem Route="auth" FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:Login}" Route="login" />
-        <ShellContent ContentTemplate="{DataTemplate local:Signup}" Route="signup" />
     </ShellItem>
 
     <FlyoutItem Title="Home">

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoShellNavigation.Views.Login"
+             Shell.FlyoutBehavior="Disabled">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login Screen"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Login" Clicked="OnLoginPress"/>
+            <Button Text="Go to Signup" Clicked="OnSignupButton"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

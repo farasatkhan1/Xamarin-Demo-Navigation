@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace DemoShellNavigation.Views.auth.onboarding
 {
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignupFlow1 : ContentPage
     {

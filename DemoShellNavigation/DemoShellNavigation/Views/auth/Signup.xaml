@@ -4,12 +4,66 @@
              x:Class="DemoShellNavigation.Views.Signup"
              Shell.FlyoutBehavior="Disabled">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Signup Screen"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Begin Sign Up Process" Clicked="onStartSignupFlow" />
-            <Button Text="Go to Signup" Clicked="OnLoginButton"/>
+        <StackLayout Padding="30" VerticalOptions="CenterAndExpand" Spacing="20">
+
+            <Image Source="logo.jpg"
+               Aspect="AspectFit"
+               HeightRequest="100"
+               HorizontalOptions="Center"/>
+
+            <Label Text="Please signup to continue using app"
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+            <Entry x:Name="UsernameEntry"
+               Placeholder="Username"
+               Keyboard="Text"
+               TextColor="#333"
+               PlaceholderColor="#999"
+               BackgroundColor="White"
+               HeightRequest="40"
+               Margin="0,5,0,0"
+               />
+
+            <Entry x:Name="EmailEntry"
+               Placeholder="Email"
+               Keyboard="Email"
+               TextColor="#333"
+               PlaceholderColor="#999"
+               BackgroundColor="White"
+               HeightRequest="40"
+               Margin="0,5,0,0"
+               />
+
+            <Entry x:Name="PasswordEntry"
+               Placeholder="Password"
+               IsPassword="True"
+               TextColor="#333"
+               PlaceholderColor="#999"
+               BackgroundColor="White"
+               HeightRequest="40"
+               Margin="0,5,0,0"
+               />
+
+            <Button Text="Signup"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="25"
+                Margin="0,20,0,0"
+                Clicked="OnSignupButtonClicked"/>
+
+            <Label Text="Already have an account? Login"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="0,20,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginButtonPressed"/>
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

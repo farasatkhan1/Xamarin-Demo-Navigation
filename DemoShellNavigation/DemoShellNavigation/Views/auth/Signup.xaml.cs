@@ -17,12 +17,12 @@ namespace DemoShellNavigation.Views
             InitializeComponent();
         }
 
-        private async void OnLoginButton(object sender, EventArgs e)
+        private async void OnLoginButtonPressed(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("//login");
         }
 
-        private async void onStartSignupFlow(object sender, EventArgs e) {
+        private async void OnSignupButtonClicked(object sender, EventArgs e) {
             await Shell.Current.GoToAsync("flow1");
         }
     }

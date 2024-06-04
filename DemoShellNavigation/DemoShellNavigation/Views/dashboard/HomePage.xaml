@@ -1,29 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DemoShellNavigation.Views.HomePage">
-    <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Bitcoin Price Index" 
+             x:Class="DemoShellNavigation.Views.HomePage"
+             xmlns:vm="clr-namespace:DemoShellNavigation.ViewModels">
+    <ContentPage.BindingContext>
+        <vm:HomePageViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20">
+        <Label Text="Bitcoin Price Index" 
                FontSize="Large"
                HorizontalOptions="Center"
                VerticalOptions="Start" />
-            <Label x:Name="UsdLabel" 
+        <Label Text="{Binding UsdPrice}" 
                FontSize="Medium"
                HorizontalOptions="Center"
                VerticalOptions="Start" />
-            <Label x:Name="GbpLabel" 
+        <Label Text="{Binding GbpPrice}" 
                FontSize="Medium"
                HorizontalOptions="Center"
                VerticalOptions="Start" />
-            <Label x:Name="EurLabel" 
+        <Label Text="{Binding EurPrice}" 
                FontSize="Medium"
                HorizontalOptions="Center"
                VerticalOptions="Start" />
-            <Button Text="Fetch New Price" 
-                Clicked="OnFetchNewPriceClicked" 
+        <Button Text="Fetch New Price" 
+                Command="{Binding FetchNewPriceCommand}" 
                 HorizontalOptions="Center"
                 VerticalOptions="Start" />
-        </StackLayout>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>

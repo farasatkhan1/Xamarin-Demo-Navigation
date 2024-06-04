@@ -20,6 +20,10 @@
                FontSize="Medium"
                HorizontalOptions="Center"
                VerticalOptions="Start" />
+            <Button Text="Fetch New Price" 
+                Clicked="OnFetchNewPriceClicked" 
+                HorizontalOptions="Center"
+                VerticalOptions="Start" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

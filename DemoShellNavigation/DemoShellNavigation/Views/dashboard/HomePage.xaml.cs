@@ -29,5 +29,10 @@ namespace DemoShellNavigation.Views
             GbpLabel.Text = $"GBP: {bitcoinPriceIndex.bpi.GBP.rate}";
             EurLabel.Text = $"EUR: {bitcoinPriceIndex.bpi.EUR.rate}";
         }
+
+        private void OnFetchNewPriceClicked(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

@@ -73,8 +73,12 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <ShellItem Route="auth" FlyoutItemIsVisible="False">
+    <ShellItem FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:Login}" Route="login" />
+    </ShellItem>
+
+    <ShellItem FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate local:Signup}" Route="signup" />
     </ShellItem>
 
     <FlyoutItem Title="Home">

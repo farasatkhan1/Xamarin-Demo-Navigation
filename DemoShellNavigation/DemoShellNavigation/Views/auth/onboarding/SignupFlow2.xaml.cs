@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DemoShellNavigation.Views
+namespace DemoShellNavigation.Views.auth.onboarding
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Signup : ContentPage
+    public partial class SignupFlow2 : ContentPage
     {
-        public Signup()
+        public SignupFlow2()
         {
             InitializeComponent();
-        }
-
-        private async void OnLoginButton(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("//login");
         }
     }
 }

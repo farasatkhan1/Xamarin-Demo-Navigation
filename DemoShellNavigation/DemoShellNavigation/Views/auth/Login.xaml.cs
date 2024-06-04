@@ -18,7 +18,7 @@ namespace DemoShellNavigation.Views
         }
 
         private async void OnSignupButton(object sender, EventArgs e) {
-            await Shell.Current.GoToAsync("signup");
+            await Shell.Current.GoToAsync("//signup");
         }
 
         private async void OnLoginPress(object sender, EventArgs e) {

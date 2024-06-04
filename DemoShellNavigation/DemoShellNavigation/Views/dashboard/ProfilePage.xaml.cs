@@ -18,7 +18,7 @@ namespace DemoShellNavigation.Views
         }
 
         private async void onLogoutPress(object sender, EventArgs e) {
-            await Shell.Current.GoToAsync("//auth");
+            await Shell.Current.GoToAsync("//login");
         }
     }
 }

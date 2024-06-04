@@ -21,5 +21,9 @@ namespace DemoShellNavigation.Views
         {
             await Shell.Current.GoToAsync("//login");
         }
+
+        private async void onStartSignupFlow(object sender, EventArgs e) {
+            await Shell.Current.GoToAsync("flow1");
+        }
     }
 }

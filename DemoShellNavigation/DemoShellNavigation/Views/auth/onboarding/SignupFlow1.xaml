@@ -7,6 +7,7 @@
             <Label Text="Signup Flow 1"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Go to Flow 2" Clicked="onFlowClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

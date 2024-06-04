@@ -9,6 +9,8 @@ namespace DemoShellNavigation
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("flow1", typeof(Views.auth.onboarding.SignupFlow1));
+            Routing.RegisterRoute("flow2", typeof(Views.auth.onboarding.SignupFlow2));
         }
     }
 }

@@ -16,5 +16,9 @@ namespace DemoShellNavigation.Views.auth.onboarding
         {
             InitializeComponent();
         }
+
+        private async void onFlowClicked(object sender, EventArgs e) {
+            await Shell.Current.GoToAsync("flow2");
+        }
     }
 }

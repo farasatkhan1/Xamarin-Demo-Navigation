@@ -8,6 +8,7 @@
             <Label Text="Signup Screen"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Begin Sign Up Process" Clicked="onStartSignupFlow" />
             <Button Text="Go to Signup" Clicked="OnLoginButton"/>
         </StackLayout>
     </ContentPage.Content>

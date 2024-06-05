@@ -3,10 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DemoShellNavigation.Views.SearchPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Search Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="30" Spacing="20">
+            <Entry 
+                x:Name="TaskEntry"
+                Placeholder="Task Description"
+                Keyboard="Text"
+                TextColor="#333"
+                PlaceholderColor="#999"
+                BackgroundColor="White"
+                HeightRequest="40"
+                Margin="0,5,0,0"
+            />
+            <Button 
+                Text="Create Task"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="30"
+                Margin="0,5,0,0"
+             />
+            <CollectionView ItemsSource="{Binding Notes}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Description}" FontSize="Medium" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,10 +4,71 @@
              x:Class="DemoShellNavigation.Views.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Profile Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Logout" Clicked="onLogoutPress" />
+            <StackLayout Padding="30" VerticalOptions="CenterAndExpand" Spacing="20">
+
+                <Image Source="logo.jpg"
+               Aspect="AspectFit"
+               HeightRequest="100"
+               HorizontalOptions="Center"/>
+
+                <Entry 
+                   x:Name="FirstnameEntry"
+                   Placeholder="First name"
+                   Keyboard="Text"
+                   TextColor="#333"
+                   PlaceholderColor="#999"
+                   BackgroundColor="White"
+                   HeightRequest="40"
+                   Margin="0,5,0,0"
+               />
+                <Entry 
+                   x:Name="LastnameEntry"
+                   Placeholder="Last name"
+                   Keyboard="Text"
+                   TextColor="#333"
+                   PlaceholderColor="#999"
+                   BackgroundColor="White"
+                   HeightRequest="40"
+                   Margin="0,5,0,0"
+               />
+                <Entry 
+                   x:Name="EmailEntry"
+                   Placeholder="Email address"
+                   Keyboard="Email"
+                   TextColor="#333"
+                   PlaceholderColor="#999"
+                   BackgroundColor="White"
+                   HeightRequest="40"
+                   Margin="0,5,0,0"
+               />
+
+                <Button Text="Save"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="25"
+                Margin="0,20,0,0"
+                Clicked="OnSaveButtonClicked"/> 
+
+                <Button Text="Clear Preferences"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="25"
+                Margin="0,20,0,0"
+                Clicked="OnClearPreferences"/>
+
+                <Button Text="Logout"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                CornerRadius="25"
+                Margin="0,20,0,0"
+                Clicked="onLogoutPress"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

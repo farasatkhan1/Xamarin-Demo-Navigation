@@ -4,9 +4,8 @@
              x:Class="DemoShellNavigation.Views.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Settings Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Settings Page"/>
+            <Label x:Name="DeviceInfoModel" Text="Device Model" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoShellNavigation.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace DemoShellNavigation.Views
         public SettingsPage()
         {
             InitializeComponent();
+
+            var dependency = DependencyService.Get<IDeviceInfoService>();
+
+            if (dependency != null) {
+                DeviceInfoModel.Text = dependency.DeviceModel();
+            }
         }
     }
 }
